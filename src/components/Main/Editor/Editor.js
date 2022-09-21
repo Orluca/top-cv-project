@@ -2,10 +2,14 @@ import React from "react";
 import styles from "./Editor.module.css";
 import PersonalDataEditor from "./PersonalDataEditor/PersonalDataEditor";
 
-function Editor() {
+function Editor(props) {
+  function handleInputChange(inputVal) {
+    props.onInputChange(inputVal);
+  }
+
   return (
     <div className={styles["editor"]}>
-      <PersonalDataEditor />
+      <PersonalDataEditor onInputChange={handleInputChange} />
     </div>
   );
 }
