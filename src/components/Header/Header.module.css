@@ -1,4 +1,5 @@
 header {
+  margin: 0 var(--side-margin);
 }
 
 h1 {
