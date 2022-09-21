@@ -4,7 +4,8 @@ import PersonalDataEditor from "./PersonalDataEditor/PersonalDataEditor";
 
 function Editor(props) {
   function handleInputChange(inputVal) {
-    props.onInputChange(inputVal);
+    // props.onInputChange(inputVal);
+    console.log(inputVal);
   }
 
   return (

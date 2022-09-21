@@ -4,22 +4,44 @@ import Subheader from "../../../General/Subheader/Subheader";
 import Input from "../../../General/Input/Input";
 import Textarea from "../../../General/Textarea/Textarea";
 
-function PersonalDataEditor(props) {
-  //   const [test, setTest] = useState("");
+// const personalData = {
+//   firstName: "",
+//   lastName: "",
+//   occupation: "",
+//   aboutMe: "",
+// };
 
-  function testy(inputVal) {
-    // setTest(inputVal);
-    props.onInputChange(inputVal);
+function PersonalDataEditor(props) {
+  const [personalData, setPersonalData] = useState({});
+
+  function handleFirstName(val) {
+    setPersonalData((prev) => ({ ...prev, firstName: val }));
   }
+
+  function handleLastName(val) {
+    setPersonalData((prev) => ({ ...prev, lastName: val }));
+  }
+
+  function handleOccupation(val) {
+    setPersonalData((prev) => ({ ...prev, occupation: val }));
+  }
+
+  function handleAboutMe(val) {
+    setPersonalData((prev) => ({ ...prev, aboutMe: val }));
+  }
+
+  React.useEffect(() => {
+    console.log(personalData);
+  }, [personalData]);
 
   return (
     <div>
       <Subheader name="Personal Data" />
       <hr />
-      <Input name="First Name" onInputChange={testy} />
-      <Input name="Last Name" />
-      <Input name="Occupation" />
-      <Textarea name="About Me" />
+      <Input name="First Name" onInputChange={handleFirstName} />
+      <Input name="Last Name" onInputChange={handleLastName} />
+      <Input name="Occupation" onInputChange={handleOccupation} />
+      <Textarea name="About Me" onInputChange={handleAboutMe} />
     </div>
   );
 }
