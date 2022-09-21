@@ -1,5 +1,5 @@
 .previewer {
-  height: 50px;
+  /* min-height: 50px; */
   /* width: 50px; */
   background-color: #fff;
   flex-grow: 1;
