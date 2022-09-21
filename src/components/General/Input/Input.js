@@ -6,10 +6,12 @@ function Input(props) {
     props.onInputChange(e.target.value);
   }
 
+  const id = props.name.toLowerCase().replace(" ", "-");
+
   return (
     <div>
-      <label htmlFor="">{props.name}</label>
-      <input type="text" onChange={sendData} />
+      <label htmlFor={id}>{props.name}</label>
+      <input type="text" onChange={sendData} id={id} />
     </div>
   );
 }

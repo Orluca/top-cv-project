@@ -6,10 +6,12 @@ function Textarea(props) {
     props.onInputChange(e.target.value);
   }
 
+  const id = props.name.toLowerCase().replace(" ", "-");
+
   return (
     <div>
-      <label htmlFor="">{props.name}</label>
-      <textarea onChange={sendData}></textarea>
+      <label htmlFor={id}>{props.name}</label>
+      <textarea onChange={sendData} id={id}></textarea>
     </div>
   );
 }
