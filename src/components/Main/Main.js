@@ -7,8 +7,8 @@ import { useState } from "react";
 function Main() {
   const [data, setData] = useState("");
 
-  function handleInputChange(inputVal) {
-    setData(inputVal);
+  function handleInputChange(val) {
+    setData(val);
   }
 
   return (

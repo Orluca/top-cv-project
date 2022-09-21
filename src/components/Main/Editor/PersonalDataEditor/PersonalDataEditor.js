@@ -4,13 +4,6 @@ import Subheader from "../../../General/Subheader/Subheader";
 import Input from "../../../General/Input/Input";
 import Textarea from "../../../General/Textarea/Textarea";
 
-// const personalData = {
-//   firstName: "",
-//   lastName: "",
-//   occupation: "",
-//   aboutMe: "",
-// };
-
 function PersonalDataEditor(props) {
   const [personalData, setPersonalData] = useState({});
 
@@ -31,7 +24,7 @@ function PersonalDataEditor(props) {
   }
 
   React.useEffect(() => {
-    console.log(personalData);
+    props.onInputChange(personalData);
   }, [personalData]);
 
   return (

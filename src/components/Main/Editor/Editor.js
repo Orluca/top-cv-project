@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Editor.module.css";
 import PersonalDataEditor from "./PersonalDataEditor/PersonalDataEditor";
 
 function Editor(props) {
-  function handleInputChange(inputVal) {
-    // props.onInputChange(inputVal);
-    console.log(inputVal);
+  const [data, setData] = useState({});
+
+  function handlePersonalData(val) {
+    setData((prev) => ({ ...prev, ...val }));
   }
+
+  React.useEffect(() => {
+    props.onInputChange(data);
+  }, [data]);
 
   return (
     <div className={styles["editor"]}>
-      <PersonalDataEditor onInputChange={handleInputChange} />
+      <PersonalDataEditor onInputChange={handlePersonalData} />
     </div>
   );
 }
