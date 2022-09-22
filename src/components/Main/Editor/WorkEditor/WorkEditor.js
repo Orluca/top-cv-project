@@ -6,7 +6,7 @@ import AddButton from "../../../General/AddButton/AddButton";
 import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-function WorkEditor() {
+function WorkEditor(props) {
   const workCard = <WorkCard key={uuidv4()} onInputChange={handleInputChanges} />;
   const [workCards, setWorkCards] = useState([workCard]);
   const [workData, setWorkData] = useState([]);
@@ -28,7 +28,7 @@ function WorkEditor() {
   }
 
   useEffect(() => {
-    console.log(workData);
+    props.onInputChange(workData);
   }, [workData]);
 
   return (

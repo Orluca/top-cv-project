@@ -15,6 +15,10 @@ function Editor(props) {
     setData((prev) => ({ ...prev, ...val }));
   }
 
+  function handleWorkData(val) {
+    setData((prev) => ({ ...prev, workExperience: [...val] }));
+  }
+
   React.useEffect(() => {
     props.onInputChange(data);
   }, [data]);
@@ -23,7 +27,7 @@ function Editor(props) {
     <div className={styles["editor"]}>
       <PersonalDataEditor onInputChange={handlePersonalData} />
       <ContactEditor onInputChange={handleContactData} />
-      <WorkEditor />
+      <WorkEditor onInputChange={handleWorkData} />
     </div>
   );
 }
