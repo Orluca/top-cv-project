@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./AddButton.module.css";
 
-function AddButton() {
+function AddButton(props) {
+  function handleButton() {
+    props.onButtonClick();
+  }
+
   return (
     <div className={styles["add-btn-wrapper"]}>
-      <button>+</button>
+      <button onClick={handleButton}>+</button>
       <div>Add more</div>
     </div>
   );
