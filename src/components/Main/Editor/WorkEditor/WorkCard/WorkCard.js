@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import Input from "../../../../General/Input/Input";
 import Textarea from "../../../../General/Textarea/Textarea";
 import styles from "./WorkCard.module.css";
+import { v4 as uuidv4 } from "uuid";
 
 function WorkCard(props) {
-  const [workData, setWorkData] = useState({});
+  const [workData, setWorkData] = useState({ id: uuidv4() });
 
   function handleRole(val) {
     setWorkData((prev) => ({ ...prev, role: val }));

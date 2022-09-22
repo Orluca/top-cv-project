@@ -6,6 +6,8 @@ import AddButton from "../../../General/AddButton/AddButton";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
+const test = [];
+
 function WorkEditor() {
   const workCard = <WorkCard key={uuidv4()} onInputChange={handleInputChanges} />;
   const [workCards, setWorkCards] = useState([workCard]);
@@ -15,7 +17,9 @@ function WorkEditor() {
   }
 
   function handleInputChanges(val) {
-    console.log(val);
+    if (Object.keys(val).length === 0) return; // Return if object is empty
+    test.push(val);
+    console.log(test);
   }
 
   return (
