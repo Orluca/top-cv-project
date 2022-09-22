@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ContactEditor from "./ContactEditor/ContactEditor";
 import styles from "./Editor.module.css";
 import PersonalDataEditor from "./PersonalDataEditor/PersonalDataEditor";
+import WorkEditor from "./WorkEditor/WorkEditor";
 
 function Editor(props) {
   const [data, setData] = useState({});
@@ -22,6 +23,7 @@ function Editor(props) {
     <div className={styles["editor"]}>
       <PersonalDataEditor onInputChange={handlePersonalData} />
       <ContactEditor onInputChange={handleContactData} />
+      <WorkEditor />
     </div>
   );
 }
