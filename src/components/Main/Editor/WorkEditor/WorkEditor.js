@@ -7,11 +7,16 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 function WorkEditor() {
+  const workCard = <WorkCard key={uuidv4()} onInputChange={handleInputChanges} />;
+  const [workCards, setWorkCards] = useState([workCard]);
+
   function handleAddButton() {
-    setWorkCards((prev) => [...prev, <WorkCard key={uuidv4()} />]);
+    setWorkCards((prev) => [...prev, workCard]);
   }
 
-  const [workCards, setWorkCards] = useState([<WorkCard key={uuidv4()} />, <WorkCard key={uuidv4()} />]);
+  function handleInputChanges(val) {
+    console.log(val);
+  }
 
   return (
     <div>
