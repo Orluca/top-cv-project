@@ -30,6 +30,11 @@ code {
 
 input {
   width: 100%; /* To prevent issues where the inputs won't shrink */
+  color: var(--color-input-text);
+}
+
+textarea {
+  color: var(--color-input-text);
 }
 
 hr {
@@ -42,4 +47,5 @@ hr {
   --color-labels: rgb(58, 58, 58);
   --color-input-background-grey: #d9d9d9;
   --color-input-background-white: #ffffff;
+  --color-input-text: rgb(71, 71, 71);
 }

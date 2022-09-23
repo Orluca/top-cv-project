@@ -25,9 +25,9 @@ function Previewer(props) {
 
   return (
     <div className={styles["previewer"]}>
-      <h2>{props.data.firstName}</h2>
-      <h1>{props.data.lastName}</h1>
-      <h3>{props.data.occupation}</h3>
+      <h2>{props.data.firstName ? props.data.firstName : "First Name"}</h2>
+      <h1>{props.data.lastName ? props.data.lastName : "Last Name"}</h1>
+      <h3>{props.data.occupation ? props.data.occupation : "Occupation"}</h3>
       <p>{props.data.aboutMe}</p>
       <p>{props.data.phoneNumber}</p>
       <p>{props.data.email}</p>
