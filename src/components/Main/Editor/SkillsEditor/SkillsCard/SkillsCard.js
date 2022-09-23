@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Input from "../../../../General/Input/Input";
 import DeleteButton from "../../../../General/DeleteButton/DeleteButton";
 import styles from "./SkillsCard.module.css";
+import Card from "../../../../General/Card/Card";
 
 function SkillsCard(props) {
   const [id, _setId] = useState(props.id);
@@ -20,10 +21,10 @@ function SkillsCard(props) {
   }, [skillsData]);
 
   return (
-    <div>
+    <Card>
       <input type="text" onChange={handleInput} />
       <DeleteButton onClick={handleDelete} />
-    </div>
+    </Card>
   );
 }
 

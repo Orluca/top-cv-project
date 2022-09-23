@@ -3,6 +3,7 @@ import Input from "../../../../General/Input/Input";
 import DeleteButton from "../../../../General/DeleteButton/DeleteButton";
 import InputTimespan from "../../../../General/InputTimespan/InputTimespan";
 import styles from "./EducationCard.module.css";
+import Card from "../../../../General/Card/Card";
 
 function EducationCard(props) {
   const [id, _setId] = useState(props.id);
@@ -33,12 +34,12 @@ function EducationCard(props) {
   }, [educationData]);
 
   return (
-    <div>
+    <Card>
       <Input name="Degree" onInputChange={handleDegree} />
       <Input name="University" onInputChange={handleUniversity} />
       <InputTimespan name="Time Span" onStartChange={handleTimespanStart} onEndChange={handleTimespanEnd} />
       <DeleteButton onClick={handleDelete} />
-    </div>
+    </Card>
   );
 }
 
