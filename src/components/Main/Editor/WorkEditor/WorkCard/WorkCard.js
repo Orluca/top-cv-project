@@ -5,6 +5,7 @@ import styles from "./WorkCard.module.css";
 import DeleteButton from "../../../../General/DeleteButton/DeleteButton";
 import InputTimespan from "../../../../General/InputTimespan/InputTimespan";
 import Card from "../../../../General/Card/Card";
+import InputsContainer from "../../../../General/InputsContainer/InputsContainer";
 
 function WorkCard(props) {
   const [id, _setId] = useState(props.id);
@@ -40,10 +41,12 @@ function WorkCard(props) {
 
   return (
     <Card>
-      <Input name="Role" onInputChange={handleRole} color="white" />
-      <Input name="Company Name" onInputChange={handleCompany} color="white" />
-      <InputTimespan name="Time Span" onStartChange={handleTimespanStart} onEndChange={handleTimespanEnd} />
-      <Textarea name="Description" onInputChange={handleDescription} color="white" />
+      <InputsContainer>
+        <Input name="Role" onInputChange={handleRole} color="white" />
+        <Input name="Company Name" onInputChange={handleCompany} color="white" />
+        <InputTimespan name="Time Span" onStartChange={handleTimespanStart} onEndChange={handleTimespanEnd} />
+        <Textarea name="Description" onInputChange={handleDescription} color="white" />
+      </InputsContainer>
       <DeleteButton onClick={handleDelete} />
     </Card>
   );

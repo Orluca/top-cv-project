@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Input from "../../../General/Input/Input";
+import InputsContainer from "../../../General/InputsContainer/InputsContainer";
 import Subheader from "../../../General/Subheader/Subheader";
 import styles from "./ContactEditor.module.css";
 
@@ -38,12 +39,14 @@ function ContactEditor(props) {
     <div>
       <Subheader name="Contact" />
       <hr />
-      <Input name="Phone Number" onInputChange={handlePhone} color="grey" />
-      <Input name="Email" onInputChange={handleEmail} color="grey" />
-      <Input name="Street" onInputChange={handleStreet} color="grey" />
-      <Input name="Street Number" onInputChange={handleStreetNumber} color="grey" />
-      <Input name="City" onInputChange={handleCity} color="grey" />
-      <Input name="Postal Code" onInputChange={handlePostalCode} color="grey" />
+      <InputsContainer>
+        <Input name="Phone Number" onInputChange={handlePhone} color="grey" />
+        <Input name="Email" onInputChange={handleEmail} color="grey" />
+        <Input name="Street" onInputChange={handleStreet} color="grey" />
+        <Input name="Street Number" onInputChange={handleStreetNumber} color="grey" />
+        <Input name="City" onInputChange={handleCity} color="grey" />
+        <Input name="Postal Code" onInputChange={handlePostalCode} color="grey" />
+      </InputsContainer>
     </div>
   );
 }
