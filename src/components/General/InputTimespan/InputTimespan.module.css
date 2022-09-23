@@ -7,10 +7,10 @@
   background-color: var(--color-input-background-white);
   border: none;
   border-radius: 3px;
-  min-width: 1px;
+  padding: 0.25rem;
 }
 
 .timespan-input-subwrapper {
   display: flex;
-  max-width: 100%;
+  column-gap: 0.5rem;
 }
