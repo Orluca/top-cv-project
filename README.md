@@ -1,1 +1,2 @@
 - input components need type (text, number)
+- adding card should focus first input field
