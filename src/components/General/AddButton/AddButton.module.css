@@ -12,8 +12,14 @@
 
 .add-btn-wrapper:hover {
   /* background-color: rgb(238, 255, 229); */
-  border: 1px solid rgb(80, 80, 80);
+  /* border: 1px solid rgb(80, 80, 80); */
   cursor: pointer;
+  color: rgb(157, 49, 49);
+}
+
+.add-btn-wrapper:hover > .add-btn {
+  /* transform: scale(0.95); */
+  filter: brightness(120%);
 }
 
 .add-btn {
