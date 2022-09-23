@@ -6,7 +6,9 @@ import { v4 as uuidv4 } from "uuid";
 import DeleteButton from "../../../../General/DeleteButton/DeleteButton";
 
 function WorkCard(props) {
-  const [workData, setWorkData] = useState({ id: uuidv4() });
+  const [id, setId] = useState(uuidv4());
+  const [workData, setWorkData] = useState({ id: id });
+  // const [workData, setWorkData] = useState({ id: uuidv4() });
 
   function handleRole(val) {
     setWorkData((prev) => ({ ...prev, role: val }));
@@ -29,7 +31,7 @@ function WorkCard(props) {
   }, [workData]);
 
   function test() {
-    console.log("DELETEL");
+    console.log(id);
   }
 
   return (

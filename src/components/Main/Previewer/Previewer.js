@@ -10,7 +10,6 @@ function Previewer(props) {
       <div>{work.description}</div>
     </div>
   ));
-  console.log(test);
 
   return (
     <div className={styles["previewer"]}>
