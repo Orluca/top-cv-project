@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Input from "../../../../General/Input/Input";
 import DeleteButton from "../../../../General/DeleteButton/DeleteButton";
+import InputTimespan from "../../../../General/InputTimespan/InputTimespan";
 import styles from "./EducationCard.module.css";
 
 function EducationCard(props) {
@@ -15,8 +16,12 @@ function EducationCard(props) {
     setEducationData((prev) => ({ ...prev, university: val }));
   }
 
-  function handleTimespan(val) {
-    setEducationData((prev) => ({ ...prev, timespan: val }));
+  function handleTimespanStart(val) {
+    setEducationData((prev) => ({ ...prev, timeStart: val }));
+  }
+
+  function handleTimespanEnd(val) {
+    setEducationData((prev) => ({ ...prev, timeEnd: val }));
   }
 
   function handleDelete() {
@@ -31,7 +36,7 @@ function EducationCard(props) {
     <div>
       <Input name="Degree" onInputChange={handleDegree} />
       <Input name="University" onInputChange={handleUniversity} />
-      <Input name="Time Span" onInputChange={handleTimespan} />
+      <InputTimespan name="Time Span" onStartChange={handleTimespanStart} onEndChange={handleTimespanEnd} />
       <DeleteButton onClick={handleDelete} />
     </div>
   );

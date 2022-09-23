@@ -16,7 +16,8 @@ function Previewer(props) {
     <div key={education.id}>
       <div>{education.degree}</div>
       <div>{education.university}</div>
-      <div>{education.timespan}</div>
+      <div>{education.timeStart}</div>
+      <div>{education.timeEnd}</div>
     </div>
   ));
 
