@@ -9,10 +9,10 @@
 }
 
 .textarea-wrapper > textarea {
-  /* background-color: var(--color-cards); */
   border: none;
   border-radius: 3px;
   resize: none;
+  height: 75px;
 }
 
 .background-grey {
