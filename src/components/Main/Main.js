@@ -13,13 +13,12 @@ function Main() {
   function handleDeleteWorkCard(id) {
     setData((prev) => {
       const workExperienceFiltered = prev.workExperience.filter((work) => work.id !== id);
-
       return { ...prev, workExperience: workExperienceFiltered };
     });
   }
 
   useEffect(() => {
-    console.log(data);
+    // console.log(data);
   }, [data]);
 
   return (

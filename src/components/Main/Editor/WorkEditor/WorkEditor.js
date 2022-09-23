@@ -7,12 +7,18 @@ import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 function WorkEditor(props) {
-  const workCard = <WorkCard key={uuidv4()} onInputChange={handleInputChanges} onDelete={handleDelete} />;
-  const [workCards, setWorkCards] = useState([workCard]);
+  // const workCard = <WorkCard key={uuidv4()} onInputChange={handleInputChanges} onDelete={handleDelete} />;
+  const [workCards, setWorkCards] = useState([createWorkCard()]);
   const [workData, setWorkData] = useState([]);
 
+  function createWorkCard() {
+    const id = uuidv4();
+
+    return <WorkCard key={id} id={id} onInputChange={handleInputChanges} onDelete={handleDelete} />;
+  }
+
   function handleAddButton() {
-    setWorkCards((prev) => [...prev, workCard]);
+    setWorkCards((prev) => [...prev, createWorkCard()]);
   }
 
   function handleInputChanges(val) {
@@ -29,6 +35,10 @@ function WorkEditor(props) {
 
   function handleDelete(id) {
     props.onDelete(id);
+    setWorkCards((prev) => {
+      const filteredCards = prev.filter((card) => card.key !== id);
+      return [...filteredCards];
+    });
   }
 
   useEffect(() => {
