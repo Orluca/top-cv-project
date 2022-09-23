@@ -3,6 +3,7 @@ import styles from "./PersonalDataEditor.module.css";
 import Subheader from "../../../General/Subheader/Subheader";
 import Input from "../../../General/Input/Input";
 import Textarea from "../../../General/Textarea/Textarea";
+import InputsContainer from "../../../General/InputsContainer/InputsContainer";
 
 function PersonalDataEditor(props) {
   const [personalData, setPersonalData] = useState({});
@@ -31,10 +32,12 @@ function PersonalDataEditor(props) {
     <div>
       <Subheader name="Personal Data" />
       <hr />
-      <Input name="First Name" onInputChange={handleFirstName} color="grey" />
-      <Input name="Last Name" onInputChange={handleLastName} color="grey" />
-      <Input name="Occupation" onInputChange={handleOccupation} color="grey" />
-      <Textarea name="About Me" onInputChange={handleAboutMe} color="grey" />
+      <InputsContainer>
+        <Input name="First Name" onInputChange={handleFirstName} color="grey" />
+        <Input name="Last Name" onInputChange={handleLastName} color="grey" />
+        <Input name="Occupation" onInputChange={handleOccupation} color="grey" />
+        <Textarea name="About Me" onInputChange={handleAboutMe} color="grey" />
+      </InputsContainer>
     </div>
   );
 }
