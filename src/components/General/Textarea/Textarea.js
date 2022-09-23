@@ -9,7 +9,7 @@ function Textarea(props) {
   const id = props.name.toLowerCase().replace(" ", "-");
 
   return (
-    <div>
+    <div className={styles["textarea-wrapper"]}>
       <label htmlFor={id}>{props.name}</label>
       <textarea onChange={sendData} id={id}></textarea>
     </div>
