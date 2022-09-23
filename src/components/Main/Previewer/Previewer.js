@@ -19,6 +19,8 @@ function Previewer(props) {
     </div>
   ));
 
+  const skills = props.data.skills?.map((skill) => <div key={skill.id}>{skill.name}</div>);
+
   return (
     <div className={styles["previewer"]}>
       <h2>{props.data.firstName}</h2>
@@ -33,6 +35,7 @@ function Previewer(props) {
       <p>{props.data.postalCode}</p>
       {work}
       {education}
+      {skills}
     </div>
   );
 }

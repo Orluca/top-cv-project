@@ -19,8 +19,15 @@ function Main() {
 
   function handleDeleteEducationCard(id) {
     setData((prev) => {
-      const educationFiltered = prev.education.filter((work) => work.id !== id);
+      const educationFiltered = prev.education.filter((education) => education.id !== id);
       return { ...prev, education: educationFiltered };
+    });
+  }
+
+  function handleDeleteSkillCard(id) {
+    setData((prev) => {
+      const skillsFiltered = prev.skills.filter((skill) => skill.id !== id);
+      return { ...prev, skills: skillsFiltered };
     });
   }
 
@@ -30,7 +37,7 @@ function Main() {
 
   return (
     <main>
-      <Editor onInputChange={handleInputChange} onDeleteWorkCard={handleDeleteWorkCard} onDeleteEducationCard={handleDeleteEducationCard} />
+      <Editor onInputChange={handleInputChange} onDeleteWorkCard={handleDeleteWorkCard} onDeleteEducationCard={handleDeleteEducationCard} onDeleteSkillCard={handleDeleteSkillCard} />
       <Previewer data={data} />
     </main>
   );
