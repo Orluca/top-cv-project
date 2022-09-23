@@ -3,6 +3,16 @@
   justify-content: flex-start;
   align-items: center;
   column-gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  width: fit-content;
+  border: 1px solid transparent; /* To avoid shifting on hover */
+}
+
+.add-btn-wrapper:hover {
+  /* background-color: rgb(238, 255, 229); */
+  border: 1px solid rgb(80, 80, 80);
+  cursor: pointer;
 }
 
 .add-btn {
@@ -13,4 +23,8 @@
 
 .add-btn > img {
   width: 40px;
+}
+
+.add-btn > img:hover {
+  cursor: pointer;
 }
