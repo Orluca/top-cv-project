@@ -17,13 +17,20 @@ function Main() {
     });
   }
 
+  function handleDeleteEducationCard(id) {
+    setData((prev) => {
+      const educationFiltered = prev.education.filter((work) => work.id !== id);
+      return { ...prev, education: educationFiltered };
+    });
+  }
+
   useEffect(() => {
-    // console.log(data);
+    console.log(data);
   }, [data]);
 
   return (
     <main>
-      <Editor onInputChange={handleInputChange} onDeleteWorkCard={handleDeleteWorkCard} />
+      <Editor onInputChange={handleInputChange} onDeleteWorkCard={handleDeleteWorkCard} onDeleteEducationCard={handleDeleteEducationCard} />
       <Previewer data={data} />
     </main>
   );

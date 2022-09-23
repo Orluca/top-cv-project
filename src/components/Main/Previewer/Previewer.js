@@ -2,12 +2,20 @@ import React from "react";
 import styles from "./Previewer.module.css";
 
 function Previewer(props) {
-  const test = props.data.workExperience?.map((work) => (
+  const work = props.data.workExperience?.map((work) => (
     <div key={work.id}>
       <div>{work.role}</div>
       <div>{work.company}</div>
       <div>{work.timespan}</div>
       <div>{work.description}</div>
+    </div>
+  ));
+
+  const education = props.data.education?.map((education) => (
+    <div key={education.id}>
+      <div>{education.degree}</div>
+      <div>{education.university}</div>
+      <div>{education.timespan}</div>
     </div>
   ));
 
@@ -23,7 +31,8 @@ function Previewer(props) {
       <p>{props.data.streetNumber}</p>
       <p>{props.data.city}</p>
       <p>{props.data.postalCode}</p>
-      {test}
+      {work}
+      {education}
     </div>
   );
 }

@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from "react";
-import styles from "./WorkEditor.module.css";
 import Subheader from "../../../General/Subheader/Subheader";
-import WorkCard from "./WorkCard/WorkCard";
+import styles from "./EducationEditor.module.css";
+import EducationCard from "./EducationCard/EducationCard";
 import AddButton from "../../../General/AddButton/AddButton";
 import { v4 as uuidv4 } from "uuid";
 
-function WorkEditor(props) {
-  const [workCards, setWorkCards] = useState([createWorkCard()]);
-  const [workData, setWorkData] = useState([]);
+function EducationEditor(props) {
+  const [educationCards, setEducationCards] = useState([createEducationCard()]);
+  const [educationData, setEducationData] = useState([]);
 
-  function createWorkCard() {
+  function createEducationCard() {
     const id = uuidv4();
 
-    return <WorkCard key={id} id={id} onInputChange={handleInputChanges} onDelete={handleDelete} />;
+    return <EducationCard key={id} id={id} onInputChange={handleInputChanges} onDelete={handleDelete} />;
   }
 
   function handleAddButton() {
-    setWorkCards((prev) => [...prev, createWorkCard()]);
+    setEducationCards((prev) => [...prev, createEducationCard()]);
   }
 
   function handleInputChanges(val) {
-    setWorkData((prev) => {
+    setEducationData((prev) => {
       const index = prev.findIndex((obj) => obj.id === val.id);
       if (index === -1) {
         return [...prev, val];
@@ -33,24 +33,24 @@ function WorkEditor(props) {
 
   function handleDelete(id) {
     props.onDelete(id);
-    setWorkCards((prev) => {
+    setEducationCards((prev) => {
       const filteredCards = prev.filter((card) => card.key !== id);
       return [...filteredCards];
     });
   }
 
   useEffect(() => {
-    props.onInputChange(workData);
-  }, [workData]);
+    props.onInputChange(educationData);
+  }, [educationData]);
 
   return (
     <div>
-      <Subheader name="Work Experience" />
+      <Subheader name="Education" />
       <hr />
-      {workCards}
+      {educationCards}
       <AddButton onButtonClick={handleAddButton} />
     </div>
   );
 }
 
-export default WorkEditor;
+export default EducationEditor;

@@ -24,13 +24,13 @@ function WorkCard(props) {
     setWorkData((prev) => ({ ...prev, description: val }));
   }
 
-  React.useEffect(() => {
-    props.onInputChange(workData);
-  }, [workData]);
-
   function handleDelete() {
     props.onDelete(id);
   }
+
+  React.useEffect(() => {
+    props.onInputChange(workData);
+  }, [workData]);
 
   return (
     <div className={styles["work-card"]}>
