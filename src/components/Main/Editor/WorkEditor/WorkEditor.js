@@ -4,6 +4,7 @@ import Subheader from "../../../General/Subheader/Subheader";
 import WorkCard from "./WorkCard/WorkCard";
 import AddButton from "../../../General/AddButton/AddButton";
 import { v4 as uuidv4 } from "uuid";
+import CardsContainer from "../../../General/CardsContainer/CardsContainer";
 
 function WorkEditor(props) {
   const [workCards, setWorkCards] = useState([createWorkCard()]);
@@ -47,7 +48,7 @@ function WorkEditor(props) {
     <div>
       <Subheader name="Work Experience" />
       <hr />
-      {workCards}
+      <CardsContainer>{workCards}</CardsContainer>
       <AddButton onButtonClick={handleAddButton} />
     </div>
   );
