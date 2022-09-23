@@ -4,6 +4,7 @@ import SkillsCard from "./SkillsCard/SkillsCard";
 import AddButton from "../../../General/AddButton/AddButton";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./SkillsEditor.module.css";
+import CardsContainer from "../../../General/CardsContainer/CardsContainer";
 
 function SkillsEditor(props) {
   const [skillCards, setSkillCards] = useState([createSkillCard()]);
@@ -47,7 +48,7 @@ function SkillsEditor(props) {
     <div>
       <Subheader name="Skills" />
       <hr />
-      {skillCards}
+      <CardsContainer>{skillCards}</CardsContainer>
       <AddButton onButtonClick={handleAddButton} />
     </div>
   );

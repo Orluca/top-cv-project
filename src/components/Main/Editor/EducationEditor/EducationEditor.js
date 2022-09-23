@@ -4,6 +4,7 @@ import EducationCard from "./EducationCard/EducationCard";
 import AddButton from "../../../General/AddButton/AddButton";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./EducationEditor.module.css";
+import CardsContainer from "../../../General/CardsContainer/CardsContainer";
 
 function EducationEditor(props) {
   const [educationCards, setEducationCards] = useState([createEducationCard()]);
@@ -47,7 +48,7 @@ function EducationEditor(props) {
     <div>
       <Subheader name="Education" />
       <hr />
-      {educationCards}
+      <CardsContainer>{educationCards}</CardsContainer>
       <AddButton onButtonClick={handleAddButton} />
     </div>
   );
