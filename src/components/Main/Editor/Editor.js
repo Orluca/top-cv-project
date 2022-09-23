@@ -19,6 +19,10 @@ function Editor(props) {
     setData((prev) => ({ ...prev, workExperience: [...val] }));
   }
 
+  function handleDeleteWorkCard(id) {
+    props.onDeleteWorkCard(id);
+  }
+
   React.useEffect(() => {
     props.onInputChange(data);
   }, [data]);
@@ -27,7 +31,7 @@ function Editor(props) {
     <div className={styles["editor"]}>
       <PersonalDataEditor onInputChange={handlePersonalData} />
       <ContactEditor onInputChange={handleContactData} />
-      <WorkEditor onInputChange={handleWorkData} />
+      <WorkEditor onInputChange={handleWorkData} onDelete={handleDeleteWorkCard} />
     </div>
   );
 }

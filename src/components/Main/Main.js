@@ -4,10 +4,18 @@ import Editor from "./Editor/Editor";
 import Previewer from "./Previewer/Previewer";
 
 function Main() {
-  const [data, setData] = useState("");
+  const [data, setData] = useState({});
 
   function handleInputChange(val) {
     setData(val);
+  }
+
+  function handleDeleteWorkCard(id) {
+    setData((prev) => {
+      const workExperienceFiltered = prev.workExperience.filter((work) => work.id !== id);
+
+      return { ...prev, workExperience: workExperienceFiltered };
+    });
   }
 
   useEffect(() => {
@@ -16,7 +24,7 @@ function Main() {
 
   return (
     <main>
-      <Editor onInputChange={handleInputChange} />
+      <Editor onInputChange={handleInputChange} onDeleteWorkCard={handleDeleteWorkCard} />
       <Previewer data={data} />
     </main>
   );

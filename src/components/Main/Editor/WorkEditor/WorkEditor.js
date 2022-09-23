@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 function WorkEditor(props) {
-  const workCard = <WorkCard key={uuidv4()} onInputChange={handleInputChanges} />;
+  const workCard = <WorkCard key={uuidv4()} onInputChange={handleInputChanges} onDelete={handleDelete} />;
   const [workCards, setWorkCards] = useState([workCard]);
   const [workData, setWorkData] = useState([]);
 
@@ -25,6 +25,10 @@ function WorkEditor(props) {
         return [...prev];
       }
     });
+  }
+
+  function handleDelete(id) {
+    props.onDelete(id);
   }
 
   useEffect(() => {

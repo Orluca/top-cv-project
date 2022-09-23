@@ -30,8 +30,8 @@ function WorkCard(props) {
     props.onInputChange(workData);
   }, [workData]);
 
-  function test() {
-    console.log(id);
+  function handleDelete() {
+    props.onDelete(id);
   }
 
   return (
@@ -40,7 +40,7 @@ function WorkCard(props) {
       <Input name="Company Name" onInputChange={handleCompany} />
       <Input name="Time Span" onInputChange={handleTimespan} />
       <Textarea name="Description" onInputChange={handleDescription} />
-      <DeleteButton onClick={test} />
+      <DeleteButton onClick={handleDelete} />
     </div>
   );
 }
