@@ -9,6 +9,7 @@
 .delete-btn:hover {
   cursor: pointer;
   filter: brightness(130%);
+  transform: scale(0.9);
 }
 
 .delete-btn > img {
