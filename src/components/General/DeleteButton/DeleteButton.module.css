@@ -4,6 +4,9 @@
   align-items: center;
   background: none;
   border: none;
+  position: absolute;
+  top: 7px;
+  right: 7px;
 }
 
 .delete-btn:hover {
