@@ -3,6 +3,7 @@ import Input from "../../../../General/Input/Input";
 import Textarea from "../../../../General/Textarea/Textarea";
 import styles from "./WorkCard.module.css";
 import DeleteButton from "../../../../General/DeleteButton/DeleteButton";
+import InputTimespan from "../../../../General/InputTimespan/InputTimespan";
 
 function WorkCard(props) {
   const [id, _setId] = useState(props.id);
@@ -16,8 +17,12 @@ function WorkCard(props) {
     setWorkData((prev) => ({ ...prev, company: val }));
   }
 
-  function handleTimespan(val) {
-    setWorkData((prev) => ({ ...prev, timespan: val }));
+  function handleTimespanStart(val) {
+    setWorkData((prev) => ({ ...prev, timeStart: val }));
+  }
+
+  function handleTimespanEnd(val) {
+    setWorkData((prev) => ({ ...prev, timeEnd: val }));
   }
 
   function handleDescription(val) {
@@ -36,7 +41,7 @@ function WorkCard(props) {
     <div className={styles["work-card"]}>
       <Input name="Role" onInputChange={handleRole} />
       <Input name="Company Name" onInputChange={handleCompany} />
-      <Input name="Time Span" onInputChange={handleTimespan} />
+      <InputTimespan name="Time Span" onStartChange={handleTimespanStart} onEndChange={handleTimespanEnd} />
       <Textarea name="Description" onInputChange={handleDescription} />
       <DeleteButton onClick={handleDelete} />
     </div>

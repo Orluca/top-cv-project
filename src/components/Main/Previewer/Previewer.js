@@ -6,7 +6,8 @@ function Previewer(props) {
     <div key={work.id}>
       <div>{work.role}</div>
       <div>{work.company}</div>
-      <div>{work.timespan}</div>
+      <div>{work.timeStart}</div>
+      <div>{work.timeEnd}</div>
       <div>{work.description}</div>
     </div>
   ));
