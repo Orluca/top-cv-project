@@ -35,3 +35,7 @@ code {
   --color-input-background-grey: #d9d9d9;
   --color-input-background-white: #ffffff;
 }
+
+input {
+  width: 100%;
+}
