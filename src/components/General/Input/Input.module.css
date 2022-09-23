@@ -8,7 +8,6 @@
 }
 
 .input-wrapper > input {
-  /* background-color: var(--color-cards); */
   border: none;
   border-radius: 3px;
 }
