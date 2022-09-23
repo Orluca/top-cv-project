@@ -1,5 +1,6 @@
 header {
   margin: 0 var(--side-margin);
+  padding: 1rem 0;
 }
 
 .app-header {
