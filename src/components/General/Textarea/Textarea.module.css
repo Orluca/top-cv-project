@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.textarea-wrapper > label {
+  color: var(--color-labels);
+}
+
 .textarea-wrapper > textarea {
   background-color: var(--color-cards);
   border: none;

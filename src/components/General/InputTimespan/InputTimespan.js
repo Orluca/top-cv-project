@@ -11,14 +11,16 @@ function InputTimespan(props) {
   }
 
   const id = props.name.toLowerCase().replace(" ", "-");
+  const idStart = id + "-start";
+  const idEnd = id + "-end";
 
   return (
-    <div>
-      <label htmlFor={id}>{props.name}</label>
-      <div>
-        <input type="text" onChange={handleStart} id={id} />
-        <div>to</div>
-        <input type="text" onChange={handleEnd} id={id} />
+    <div className={styles["timespan-input-wrapper"]}>
+      <label htmlFor={idStart}>{props.name}</label>
+      <div className={styles["timespan-input-subwrapper"]}>
+        <input type="text" onChange={handleStart} id={idStart} />
+        <label htmlFor={idEnd}>to</label>
+        <input type="text" onChange={handleEnd} id={idEnd} />
       </div>
     </div>
   );

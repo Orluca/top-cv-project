@@ -1,0 +1,4 @@
+.timespan-input-wrapper > label,
+.timespan-input-subwrapper > label {
+  color: var(--color-labels);
+}

@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.input-wrapper > label {
+  color: var(--color-labels);
+}
+
 .input-wrapper > input {
   background-color: var(--color-cards);
   border: none;
