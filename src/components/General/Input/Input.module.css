@@ -1,0 +1,10 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper > input {
+  background-color: var(--color-cards);
+  border: none;
+  border-radius: 3px;
+}

@@ -9,7 +9,7 @@ function Input(props) {
   const id = props.name.toLowerCase().replace(" ", "-");
 
   return (
-    <div>
+    <div className={styles["input-wrapper"]}>
       <label htmlFor={id}>{props.name}</label>
       <input type="text" onChange={sendData} id={id} />
     </div>
