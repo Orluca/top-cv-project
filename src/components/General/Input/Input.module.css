@@ -8,7 +8,15 @@
 }
 
 .input-wrapper > input {
-  background-color: var(--color-cards);
+  /* background-color: var(--color-cards); */
   border: none;
   border-radius: 3px;
+}
+
+.background-grey {
+  background-color: var(--color-input-background-grey);
+}
+
+.background-white {
+  background-color: var(--color-input-background-white);
 }

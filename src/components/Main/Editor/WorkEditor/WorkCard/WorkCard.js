@@ -40,10 +40,10 @@ function WorkCard(props) {
 
   return (
     <Card>
-      <Input name="Role" onInputChange={handleRole} />
-      <Input name="Company Name" onInputChange={handleCompany} />
+      <Input name="Role" onInputChange={handleRole} color="white" />
+      <Input name="Company Name" onInputChange={handleCompany} color="white" />
       <InputTimespan name="Time Span" onStartChange={handleTimespanStart} onEndChange={handleTimespanEnd} />
-      <Textarea name="Description" onInputChange={handleDescription} />
+      <Textarea name="Description" onInputChange={handleDescription} color="white" />
       <DeleteButton onClick={handleDelete} />
     </Card>
   );

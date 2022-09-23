@@ -32,4 +32,6 @@ code {
   --side-margin: 15%;
   --color-cards: #d9d9d9;
   --color-labels: rgb(58, 58, 58);
+  --color-input-background-grey: #d9d9d9;
+  --color-input-background-white: #ffffff;
 }

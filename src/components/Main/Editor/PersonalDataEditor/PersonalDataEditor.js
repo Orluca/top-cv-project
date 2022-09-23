@@ -31,10 +31,10 @@ function PersonalDataEditor(props) {
     <div>
       <Subheader name="Personal Data" />
       <hr />
-      <Input name="First Name" onInputChange={handleFirstName} />
-      <Input name="Last Name" onInputChange={handleLastName} />
-      <Input name="Occupation" onInputChange={handleOccupation} />
-      <Textarea name="About Me" onInputChange={handleAboutMe} />
+      <Input name="First Name" onInputChange={handleFirstName} color="grey" />
+      <Input name="Last Name" onInputChange={handleLastName} color="grey" />
+      <Input name="Occupation" onInputChange={handleOccupation} color="grey" />
+      <Textarea name="About Me" onInputChange={handleAboutMe} color="grey" />
     </div>
   );
 }

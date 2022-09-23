@@ -11,7 +11,7 @@ function Input(props) {
   return (
     <div className={styles["input-wrapper"]}>
       <label htmlFor={id}>{props.name}</label>
-      <input type="text" onChange={sendData} id={id} />
+      <input type="text" onChange={sendData} id={id} className={styles[`background-${props.color}`]} />
     </div>
   );
 }

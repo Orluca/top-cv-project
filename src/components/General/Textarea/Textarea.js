@@ -11,7 +11,7 @@ function Textarea(props) {
   return (
     <div className={styles["textarea-wrapper"]}>
       <label htmlFor={id}>{props.name}</label>
-      <textarea onChange={sendData} id={id}></textarea>
+      <textarea onChange={sendData} id={id} className={styles[`background-${props.color}`]}></textarea>
     </div>
   );
 }
