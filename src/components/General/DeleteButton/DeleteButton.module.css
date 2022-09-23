@@ -6,7 +6,11 @@
   border: none;
 }
 
+.delete-btn:hover {
+  cursor: pointer;
+  filter: brightness(130%);
+}
+
 .delete-btn > img {
   width: 20px;
-  /* background-color: #434343; */
 }
