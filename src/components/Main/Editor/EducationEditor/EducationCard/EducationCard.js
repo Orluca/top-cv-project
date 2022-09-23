@@ -41,7 +41,7 @@ function EducationCard(props) {
         <Input name="University" onInputChange={handleUniversity} color="white" />
         <InputTimespan name="Time Span" onStartChange={handleTimespanStart} onEndChange={handleTimespanEnd} />
       </InputsContainer>
-      <DeleteButton onClick={handleDelete} />
+      <DeleteButton onClick={handleDelete} topRight="true" />
     </Card>
   );
 }

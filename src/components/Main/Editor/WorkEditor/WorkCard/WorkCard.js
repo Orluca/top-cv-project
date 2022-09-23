@@ -47,7 +47,7 @@ function WorkCard(props) {
         <InputTimespan name="Time Span" onStartChange={handleTimespanStart} onEndChange={handleTimespanEnd} />
         <Textarea name="Description" onInputChange={handleDescription} color="white" />
       </InputsContainer>
-      <DeleteButton onClick={handleDelete} />
+      <DeleteButton onClick={handleDelete} topRight="true" />
     </Card>
   );
 }

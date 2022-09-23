@@ -8,7 +8,7 @@ function DeleteButton(props) {
   }
 
   return (
-    <button onClick={handleClick} className={styles["delete-btn"]}>
+    <button onClick={handleClick} className={`${styles["delete-btn"]} ${styles[props.topRight === "true" ? "top-right-positioning" : ""]}`}>
       <img src={deleteIcon} alt="A delete icon" />
     </button>
   );
