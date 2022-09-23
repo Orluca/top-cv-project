@@ -1,0 +1,9 @@
+.delete-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-btn > img {
+  width: 20px;
+}
