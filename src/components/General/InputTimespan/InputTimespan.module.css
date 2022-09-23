@@ -2,3 +2,9 @@
 .timespan-input-subwrapper > label {
   color: var(--color-labels);
 }
+
+.timespan-input-subwrapper > input {
+  background-color: var(--color-input-background-white);
+  border: none;
+  border-radius: 3px;
+}
