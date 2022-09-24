@@ -1,0 +1,9 @@
+.first-name-preview,
+.last-name-preview,
+.occupation-preview {
+  text-transform: uppercase;
+}
+
+.last-name-preview {
+  color: var(--color-highlight);
+}
