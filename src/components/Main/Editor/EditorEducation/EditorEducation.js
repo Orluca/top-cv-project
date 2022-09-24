@@ -7,7 +7,7 @@ import styles from "./EditorEducation.module.css";
 import CardsContainer from "../../../General/CardsContainer/CardsContainer";
 
 function EditorEducation(props) {
-  const [educationCards, setEducationCards] = useState([createEducationCard()]);
+  const [educationCards, setEducationCards] = useState([]);
   const [educationData, setEducationData] = useState([]);
 
   function createEducationCard() {

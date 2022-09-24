@@ -7,7 +7,7 @@ import styles from "./EditorSkills.module.css";
 import CardsContainer from "../../../General/CardsContainer/CardsContainer";
 
 function EditorSkills(props) {
-  const [skillCards, setSkillCards] = useState([createSkillCard()]);
+  const [skillCards, setSkillCards] = useState([]);
   const [skillsData, setSkillsData] = useState([]);
 
   function createSkillCard() {

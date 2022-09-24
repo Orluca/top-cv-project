@@ -7,7 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 import CardsContainer from "../../../General/CardsContainer/CardsContainer";
 
 function EditorWork(props) {
-  const [workCards, setWorkCards] = useState([createWorkCard()]);
+  const [workCards, setWorkCards] = useState([]);
   const [workData, setWorkData] = useState([]);
 
   function createWorkCard() {
