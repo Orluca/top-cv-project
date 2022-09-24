@@ -2,3 +2,4 @@
 - adding card should focus first input field
 - nice animation for new card
 - skills editor cards taking up too much space
+- highlight color anpassen

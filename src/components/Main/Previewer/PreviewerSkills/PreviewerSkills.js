@@ -6,7 +6,7 @@ function PreviewerSkills(props) {
   const skillItems = props.data?.map((skill) => <li key={skill.id}>{skill.name}</li>);
 
   return (
-    <div>
+    <div className={styles["previewer-skills"]}>
       <Subheader name="Skills" />
       <ul>{skillItems}</ul>
     </div>

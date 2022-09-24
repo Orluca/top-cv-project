@@ -7,7 +7,7 @@ import phoneIcon from "./phone-icon.svg";
 
 function PreviewerContact(props) {
   return (
-    <div className={styles["contact-preview-container"]}>
+    <div className={styles["previewer-contact"]}>
       <Subheader name="Contact" />
       <ul>
         <div className={styles["contact-item"]}>

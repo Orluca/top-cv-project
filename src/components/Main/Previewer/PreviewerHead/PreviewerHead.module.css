@@ -7,3 +7,6 @@
 .last-name-preview {
   color: var(--color-highlight);
 }
+.previewer-head {
+  grid-column: 1 / 3;
+}

@@ -7,7 +7,7 @@ function PreviewerWork(props) {
   const workCards = props.data?.map((workData) => <WorkPreviewCard data={workData} key={workData.id} />);
 
   return (
-    <div>
+    <div className={styles["previewer-work"]}>
       <Subheader name="Work Experience" />
       {workCards}
     </div>

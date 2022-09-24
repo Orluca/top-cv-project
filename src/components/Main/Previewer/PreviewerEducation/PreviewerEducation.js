@@ -7,7 +7,7 @@ function PreviewerEducation(props) {
   const educationCards = props.data?.map((educationData) => <EducationPreviewCard data={educationData} key={educationData.id} />);
 
   return (
-    <div>
+    <div className={styles["previewer-education"]}>
       <Subheader name="Education" />
       {educationCards}
     </div>
