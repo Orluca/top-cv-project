@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Previewer.module.css";
 import PreviewerAbout from "./PreviewerAbout/PreviewerAbout";
+import PreviewerContact from "./PreviewerContact/PreviewerContact";
 import PreviewerEducation from "./PreviewerEducation/PreviewerEducation";
 import PreviewerHead from "./PreviewerHead/PreviewerHead";
 import PreviewerSkills from "./PreviewerSkills/PreviewerSkills";
@@ -14,12 +15,7 @@ function Previewer(props) {
       <PreviewerWork data={props.data.workExperience} />
       <PreviewerEducation data={props.data.education} />
       <PreviewerSkills data={props.data.skills} />
-      <p>{props.data.phoneNumber}</p>
-      <p>{props.data.email}</p>
-      <p>{props.data.street}</p>
-      <p>{props.data.streetNumber}</p>
-      <p>{props.data.city}</p>
-      <p>{props.data.postalCode}</p>
+      {/* <PreviewerContact /> */}
     </div>
   );
 }
