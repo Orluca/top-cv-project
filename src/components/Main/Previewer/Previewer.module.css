@@ -7,4 +7,6 @@
   grid-auto-rows: min-content;
   row-gap: 2rem;
   column-gap: 1rem;
+  border-radius: 10px;
+  height: fit-content;
 }
