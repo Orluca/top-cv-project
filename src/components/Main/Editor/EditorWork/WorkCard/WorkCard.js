@@ -40,7 +40,7 @@ function WorkCard(props) {
   }, [workData]);
 
   return (
-    <Card>
+    <Card padding="big">
       <InputsContainer>
         <Input name="Role" onInputChange={handleRole} type="text" color="white" />
         <Input name="Company Name" onInputChange={handleCompany} type="text" color="white" />

@@ -21,7 +21,7 @@ function SkillsCard(props) {
   }, [skillsData]);
 
   return (
-    <Card>
+    <Card padding="small">
       <div className={styles["skill-input-wrapper"]}>
         <input type="text" onChange={handleInput} className={styles["skill-input"]} />
         <DeleteButton onClick={handleDelete} />
