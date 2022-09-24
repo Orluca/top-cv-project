@@ -47,7 +47,7 @@ function EditorEducation(props) {
   return (
     <div>
       <Subheader name="Education" />
-      <CardsContainer>{educationCards}</CardsContainer>
+      <CardsContainer gap="big">{educationCards}</CardsContainer>
       <AddButton onButtonClick={handleAddButton} />
     </div>
   );

@@ -1,5 +1,12 @@
 .cards-container {
   display: flex;
   flex-direction: column;
+}
+
+.gap-big {
   row-gap: 1rem;
+}
+
+.gap-small {
+  row-gap: 0.5rem;
 }

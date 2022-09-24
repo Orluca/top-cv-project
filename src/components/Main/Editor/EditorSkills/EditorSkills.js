@@ -47,7 +47,7 @@ function EditorSkills(props) {
   return (
     <div>
       <Subheader name="Skills" />
-      <CardsContainer>{skillCards}</CardsContainer>
+      <CardsContainer gap="small">{skillCards}</CardsContainer>
       <AddButton onButtonClick={handleAddButton} />
     </div>
   );

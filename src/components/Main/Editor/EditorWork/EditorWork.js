@@ -47,7 +47,7 @@ function EditorWork(props) {
   return (
     <div>
       <Subheader name="Work Experience" />
-      <CardsContainer>{workCards}</CardsContainer>
+      <CardsContainer gap="big">{workCards}</CardsContainer>
       <AddButton onButtonClick={handleAddButton} />
     </div>
   );
