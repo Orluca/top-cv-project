@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/top-cv-project/static/css/main.00359e92.css",
+    "main.js": "/top-cv-project/static/js/main.5a6a24f2.js",
+    "static/media/github-icon.svg": "/top-cv-project/static/media/github-icon.deb327838c34a89686a8c68ff495fdf4.svg",
+    "index.html": "/top-cv-project/index.html",
+    "static/media/delete-icon.svg": "/top-cv-project/static/media/delete-icon.7aac924c4f2f678620d52f18d32a2225.svg",
+    "static/media/phone-icon.svg": "/top-cv-project/static/media/phone-icon.e4a24e13885335c863bc9b3aff0b0138.svg",
+    "static/media/plus-icon.svg": "/top-cv-project/static/media/plus-icon.133ba01f9f944038db23d554e628636d.svg",
+    "static/media/email-icon.svg": "/top-cv-project/static/media/email-icon.bfc53e7fa7cf312476cec2fdcb4ce268.svg",
+    "static/media/location-icon.svg": "/top-cv-project/static/media/location-icon.41494ba34ecd0dcd9170efea50dcf938.svg",
+    "main.00359e92.css.map": "/top-cv-project/static/css/main.00359e92.css.map",
+    "main.5a6a24f2.js.map": "/top-cv-project/static/js/main.5a6a24f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00359e92.css",
+    "static/js/main.5a6a24f2.js"
+  ]
+}
