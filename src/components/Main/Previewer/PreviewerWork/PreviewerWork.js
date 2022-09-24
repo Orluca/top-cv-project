@@ -9,7 +9,7 @@ function PreviewerWork(props) {
   return (
     <div className={styles["previewer-work"]}>
       <Subheader name="Work Experience" />
-      {workCards}
+      <ul>{workCards}</ul>
     </div>
   );
 }

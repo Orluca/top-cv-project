@@ -1,3 +1,9 @@
 .previewer-work {
   grid-column: 1 / 3;
 }
+
+.previewer-work > ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
