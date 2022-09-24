@@ -4,12 +4,12 @@ import styles from "./PreviewerWork.module.css";
 import WorkPreviewCard from "./WorkPreviewCard/WorkPreviewCard";
 
 function PreviewerWork(props) {
-  const cards = props.data?.map((workData) => <WorkPreviewCard data={workData} key={workData.id} />);
+  const workCards = props.data?.map((workData) => <WorkPreviewCard data={workData} key={workData.id} />);
 
   return (
     <div>
       <Subheader name="Work Experience" />
-      {cards}
+      {workCards}
     </div>
   );
 }

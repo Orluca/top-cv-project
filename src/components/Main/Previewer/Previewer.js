@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Previewer.module.css";
 import PreviewerAbout from "./PreviewerAbout/PreviewerAbout";
+import PreviewerEducation from "./PreviewerEducation/PreviewerEducation";
 import PreviewerHead from "./PreviewerHead/PreviewerHead";
 import PreviewerWork from "./PreviewerWork/PreviewerWork";
 
@@ -15,14 +16,14 @@ function Previewer(props) {
   //   </div>
   // ));
 
-  const education = props.data.education?.map((education) => (
-    <div key={education.id}>
-      <div>{education.degree}</div>
-      <div>{education.university}</div>
-      <div>{education.timeStart}</div>
-      <div>{education.timeEnd}</div>
-    </div>
-  ));
+  // const education = props.data.education?.map((education) => (
+  //   <div key={education.id}>
+  //     <div>{education.degree}</div>
+  //     <div>{education.university}</div>
+  //     <div>{education.timeStart}</div>
+  //     <div>{education.timeEnd}</div>
+  //   </div>
+  // ));
 
   const skills = props.data.skills?.map((skill) => <div key={skill.id}>{skill.name}</div>);
 
@@ -34,6 +35,7 @@ function Previewer(props) {
       <PreviewerHead data={props.data} />
       <PreviewerAbout data={props.data} />
       <PreviewerWork data={props.data.workExperience} />
+      <PreviewerEducation data={props.data.education} />
       <p>{props.data.phoneNumber}</p>
       <p>{props.data.email}</p>
       <p>{props.data.street}</p>
@@ -41,7 +43,7 @@ function Previewer(props) {
       <p>{props.data.city}</p>
       <p>{props.data.postalCode}</p>
       {/* {work} */}
-      {education}
+      {/* {education} */}
       {skills}
     </div>
   );
