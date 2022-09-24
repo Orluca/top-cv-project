@@ -1,2 +1,4 @@
-- adding card should focus first input field
 - nice animation for new card
+- responsiveness??
+- save data to local storage????
+- bg gradient?
