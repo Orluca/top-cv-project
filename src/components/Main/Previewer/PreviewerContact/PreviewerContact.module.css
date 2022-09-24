@@ -1,3 +1,21 @@
 .contact-icon {
   width: 20px;
 }
+
+.contact-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.contact-item__subcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-preview-container > ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
