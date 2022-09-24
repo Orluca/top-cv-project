@@ -38,12 +38,12 @@ function EditorContact(props) {
     <div>
       <Subheader name="Contact" />
       <InputsContainer>
-        <Input name="Phone Number" onInputChange={handlePhone} type="number" color="grey" />
+        <Input name="Phone Number" onInputChange={handlePhone} type="tel" color="grey" />
         <Input name="Email" onInputChange={handleEmail} type="email" color="grey" />
         <Input name="Street" onInputChange={handleStreet} type="text" color="grey" />
         <Input name="Street Number" onInputChange={handleStreetNumber} type="number" color="grey" />
-        <Input name="City" onInputChange={handleCity} type="text" color="grey" />
         <Input name="Postal Code" onInputChange={handlePostalCode} type="number" color="grey" />
+        <Input name="City" onInputChange={handleCity} type="text" color="grey" />
       </InputsContainer>
     </div>
   );
