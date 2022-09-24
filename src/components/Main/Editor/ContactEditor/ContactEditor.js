@@ -38,7 +38,6 @@ function ContactEditor(props) {
   return (
     <div>
       <Subheader name="Contact" />
-      <hr />
       <InputsContainer>
         <Input name="Phone Number" onInputChange={handlePhone} color="grey" />
         <Input name="Email" onInputChange={handleEmail} color="grey" />

@@ -1,2 +1,3 @@
 - input components need type (text, number)
 - adding card should focus first input field
+- nice animation for new card

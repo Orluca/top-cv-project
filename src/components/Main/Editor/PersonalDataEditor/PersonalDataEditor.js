@@ -31,7 +31,6 @@ function PersonalDataEditor(props) {
   return (
     <div>
       <Subheader name="Personal Data" />
-      <hr />
       <InputsContainer>
         <Input name="First Name" onInputChange={handleFirstName} color="grey" />
         <Input name="Last Name" onInputChange={handleLastName} color="grey" />

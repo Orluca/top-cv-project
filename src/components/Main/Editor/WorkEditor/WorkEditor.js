@@ -47,7 +47,6 @@ function WorkEditor(props) {
   return (
     <div>
       <Subheader name="Work Experience" />
-      <hr />
       <CardsContainer>{workCards}</CardsContainer>
       <AddButton onButtonClick={handleAddButton} />
     </div>

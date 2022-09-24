@@ -47,7 +47,6 @@ function SkillsEditor(props) {
   return (
     <div>
       <Subheader name="Skills" />
-      <hr />
       <CardsContainer>{skillCards}</CardsContainer>
       <AddButton onButtonClick={handleAddButton} />
     </div>
