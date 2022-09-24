@@ -23,3 +23,9 @@
 .background-white {
   background-color: var(--color-input-background-white);
 }
+
+@media only screen and (max-width: 450px) {
+  .textarea-wrapper {
+    grid-column: 1 / 2;
+  }
+}

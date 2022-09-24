@@ -11,3 +11,9 @@
   border-radius: 10px;
   height: fit-content;
 }
+
+@media only screen and (max-width: 650px) {
+  .previewer {
+    width: 100%;
+  }
+}

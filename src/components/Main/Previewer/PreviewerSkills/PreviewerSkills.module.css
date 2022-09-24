@@ -1,3 +1,9 @@
 .previewer-skills > ul {
   list-style-position: inside;
 }
+
+@media only screen and (max-width: 500px) {
+  .previewer-skills {
+    grid-column: 1 / 3;
+  }
+}
