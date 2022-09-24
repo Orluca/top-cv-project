@@ -29,18 +29,6 @@ function Editor(props) {
     setData((prev) => ({ ...prev, skills: [...val] }));
   }
 
-  function handleDeleteWorkCard(id) {
-    props.onDeleteWorkCard(id);
-  }
-
-  function handleDeleteEducationCard(id) {
-    props.onDeleteEducationCard(id);
-  }
-
-  function handleDeleteSkillCard(id) {
-    props.onDeleteSkillCard(id);
-  }
-
   React.useEffect(() => {
     props.onInputChange(data);
   }, [data]);
@@ -49,9 +37,9 @@ function Editor(props) {
     <div className={styles["editor"]}>
       <EditorPersonal onInputChange={handlePersonalData} />
       <EditorContact onInputChange={handleContactData} />
-      <EditorWork onInputChange={handleWorkData} onDelete={handleDeleteWorkCard} />
-      <EditorEducation onInputChange={handleEducationData} onDelete={handleDeleteEducationCard} />
-      <EditorSkills onInputChange={handleSkillsData} onDelete={handleDeleteSkillCard} />
+      <EditorWork onInputChange={handleWorkData} />
+      <EditorEducation onInputChange={handleEducationData} />
+      <EditorSkills onInputChange={handleSkillsData} />
     </div>
   );
 }

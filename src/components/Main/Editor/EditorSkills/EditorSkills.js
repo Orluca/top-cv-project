@@ -33,10 +33,13 @@ function EditorSkills(props) {
   }
 
   function handleDelete(id) {
-    props.onDelete(id);
     setSkillCards((prev) => {
       const filteredCards = prev.filter((card) => card.key !== id);
       return [...filteredCards];
+    });
+    setSkillsData((prev) => {
+      const filteredData = prev.filter((skill) => skill.id !== id);
+      return [...filteredData];
     });
   }
 

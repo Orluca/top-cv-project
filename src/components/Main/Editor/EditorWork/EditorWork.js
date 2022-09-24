@@ -33,14 +33,18 @@ function EditorWork(props) {
   }
 
   function handleDelete(id) {
-    props.onDelete(id);
     setWorkCards((prev) => {
       const filteredCards = prev.filter((card) => card.key !== id);
       return [...filteredCards];
     });
+    setWorkData((prev) => {
+      const filteredData = prev.filter((work) => work.id !== id);
+      return [...filteredData];
+    });
   }
 
   useEffect(() => {
+    console.log(workData);
     props.onInputChange(workData);
   }, [workData]);
 

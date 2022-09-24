@@ -33,10 +33,13 @@ function EditorEducation(props) {
   }
 
   function handleDelete(id) {
-    props.onDelete(id);
     setEducationCards((prev) => {
       const filteredCards = prev.filter((card) => card.key !== id);
       return [...filteredCards];
+    });
+    setEducationData((prev) => {
+      const filteredData = prev.filter((education) => education.id !== id);
+      return [...filteredData];
     });
   }
 

@@ -1,4 +1,3 @@
 - adding card should focus first input field
 - nice animation for new card
-- BUG: reload page, remove work exp card, add new card => now there are two placeholder cards in the preview
-- no default cards
+- clean up css modules that are not needed

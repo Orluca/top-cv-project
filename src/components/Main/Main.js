@@ -10,34 +10,13 @@ function Main() {
     setData(val);
   }
 
-  function handleDeleteWorkCard(id) {
-    setData((prev) => {
-      const workExperienceFiltered = prev.workExperience.filter((work) => work.id !== id);
-      return { ...prev, workExperience: workExperienceFiltered };
-    });
-  }
-
-  function handleDeleteEducationCard(id) {
-    setData((prev) => {
-      const educationFiltered = prev.education.filter((education) => education.id !== id);
-      return { ...prev, education: educationFiltered };
-    });
-  }
-
-  function handleDeleteSkillCard(id) {
-    setData((prev) => {
-      const skillsFiltered = prev.skills.filter((skill) => skill.id !== id);
-      return { ...prev, skills: skillsFiltered };
-    });
-  }
-
   useEffect(() => {
-    console.log(data);
+    // console.log(data);
   }, [data]);
 
   return (
     <main>
-      <Editor onInputChange={handleInputChange} onDeleteWorkCard={handleDeleteWorkCard} onDeleteEducationCard={handleDeleteEducationCard} onDeleteSkillCard={handleDeleteSkillCard} />
+      <Editor onInputChange={handleInputChange} />
       <Previewer data={data} />
     </main>
   );
