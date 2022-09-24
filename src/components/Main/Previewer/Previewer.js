@@ -15,7 +15,7 @@ function Previewer(props) {
       <PreviewerWork data={props.data.workExperience} />
       <PreviewerEducation data={props.data.education} />
       <PreviewerSkills data={props.data.skills} />
-      {/* <PreviewerContact /> */}
+      <PreviewerContact data={props.data.contact} />
     </div>
   );
 }
