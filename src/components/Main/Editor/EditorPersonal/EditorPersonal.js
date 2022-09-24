@@ -32,9 +32,9 @@ function EditorPersonal(props) {
     <div>
       <Subheader name="Personal Data" />
       <InputsContainer>
-        <Input name="First Name" onInputChange={handleFirstName} color="grey" />
-        <Input name="Last Name" onInputChange={handleLastName} color="grey" />
-        <Input name="Occupation" onInputChange={handleOccupation} color="grey" />
+        <Input name="First Name" onInputChange={handleFirstName} type="text" color="grey" />
+        <Input name="Last Name" onInputChange={handleLastName} type="text" color="grey" />
+        <Input name="Occupation" onInputChange={handleOccupation} type="text" color="grey" />
         <Textarea name="About Me" onInputChange={handleAboutMe} color="grey" />
       </InputsContainer>
     </div>

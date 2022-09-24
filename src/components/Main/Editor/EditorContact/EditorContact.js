@@ -39,12 +39,12 @@ function EditorContact(props) {
     <div>
       <Subheader name="Contact" />
       <InputsContainer>
-        <Input name="Phone Number" onInputChange={handlePhone} color="grey" />
-        <Input name="Email" onInputChange={handleEmail} color="grey" />
-        <Input name="Street" onInputChange={handleStreet} color="grey" />
-        <Input name="Street Number" onInputChange={handleStreetNumber} color="grey" />
-        <Input name="City" onInputChange={handleCity} color="grey" />
-        <Input name="Postal Code" onInputChange={handlePostalCode} color="grey" />
+        <Input name="Phone Number" onInputChange={handlePhone} type="number" color="grey" />
+        <Input name="Email" onInputChange={handleEmail} type="email" color="grey" />
+        <Input name="Street" onInputChange={handleStreet} type="text" color="grey" />
+        <Input name="Street Number" onInputChange={handleStreetNumber} type="number" color="grey" />
+        <Input name="City" onInputChange={handleCity} type="text" color="grey" />
+        <Input name="Postal Code" onInputChange={handlePostalCode} type="number" color="grey" />
       </InputsContainer>
     </div>
   );

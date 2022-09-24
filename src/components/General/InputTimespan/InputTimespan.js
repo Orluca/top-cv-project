@@ -18,9 +18,9 @@ function InputTimespan(props) {
     <div className={styles["timespan-input-wrapper"]}>
       <label htmlFor={idStart}>{props.name}</label>
       <div className={styles["timespan-input-subwrapper"]}>
-        <input type="text" onChange={handleStart} id={idStart} />
+        <input type="number" onChange={handleStart} id={idStart} />
         <label htmlFor={idEnd}>to</label>
-        <input type="text" onChange={handleEnd} id={idEnd} />
+        <input type="number" onChange={handleEnd} id={idEnd} />
       </div>
     </div>
   );

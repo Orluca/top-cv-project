@@ -2,5 +2,4 @@
 - adding card should focus first input field
 - nice animation for new card
 - skills editor cards taking up too much space
-- highlight color anpassen
 - BUG: reload page, remove work exp card, add new card => now there are two placeholder cards in the preview
