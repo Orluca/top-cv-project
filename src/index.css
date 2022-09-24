@@ -37,6 +37,7 @@ input {
 textarea {
   color: var(--color-input-text);
   font-family: "Outfit", sans-serif;
+  width: 100%; /* To prevent issues where the inputs won't shrink */
 }
 
 :root {
