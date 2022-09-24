@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from "react";
 import Subheader from "../../../General/Subheader/Subheader";
-import EducationCard from "./EducationCard/EducationCard";
+import SkillsCard from "./SkillsCard/SkillsCard";
 import AddButton from "../../../General/AddButton/AddButton";
 import { v4 as uuidv4 } from "uuid";
-import styles from "./EducationEditor.module.css";
+import styles from "./EditorSkills.module.css";
 import CardsContainer from "../../../General/CardsContainer/CardsContainer";
 
-function EducationEditor(props) {
-  const [educationCards, setEducationCards] = useState([createEducationCard()]);
-  const [educationData, setEducationData] = useState([]);
+function EditorSkills(props) {
+  const [skillCards, setSkillCards] = useState([createSkillCard()]);
+  const [skillsData, setSkillsData] = useState([]);
 
-  function createEducationCard() {
+  function createSkillCard() {
     const id = uuidv4();
 
-    return <EducationCard key={id} id={id} onInputChange={handleInputChanges} onDelete={handleDelete} />;
+    return <SkillsCard key={id} id={id} onInputChange={handleInputChanges} onDelete={handleDelete} />;
   }
 
   function handleAddButton() {
-    setEducationCards((prev) => [...prev, createEducationCard()]);
+    setSkillCards((prev) => [...prev, createSkillCard()]);
   }
 
   function handleInputChanges(val) {
-    setEducationData((prev) => {
+    setSkillsData((prev) => {
       const index = prev.findIndex((obj) => obj.id === val.id);
       if (index === -1) {
         return [...prev, val];
@@ -34,23 +34,23 @@ function EducationEditor(props) {
 
   function handleDelete(id) {
     props.onDelete(id);
-    setEducationCards((prev) => {
+    setSkillCards((prev) => {
       const filteredCards = prev.filter((card) => card.key !== id);
       return [...filteredCards];
     });
   }
 
   useEffect(() => {
-    props.onInputChange(educationData);
-  }, [educationData]);
+    props.onInputChange(skillsData);
+  }, [skillsData]);
 
   return (
     <div>
-      <Subheader name="Education" />
-      <CardsContainer>{educationCards}</CardsContainer>
+      <Subheader name="Skills" />
+      <CardsContainer>{skillCards}</CardsContainer>
       <AddButton onButtonClick={handleAddButton} />
     </div>
   );
 }
 
-export default EducationEditor;
+export default EditorSkills;

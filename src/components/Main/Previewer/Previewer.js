@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Previewer.module.css";
 import PreviewerAbout from "./PreviewerAbout/PreviewerAbout";
 import PreviewerHead from "./PreviewerHead/PreviewerHead";
+import PreviewerWork from "./PreviewerWork/PreviewerWork";
 
 function Previewer(props) {
   const work = props.data.workExperience?.map((work) => (
@@ -32,7 +33,7 @@ function Previewer(props) {
       <h3>{props.data.occupation ? props.data.occupation : "Occupation"}</h3> */}
       <PreviewerHead data={props.data} />
       <PreviewerAbout data={props.data} />
-      <p>{props.data.aboutMe}</p>
+      <PreviewerWork data={props.data} />
       <p>{props.data.phoneNumber}</p>
       <p>{props.data.email}</p>
       <p>{props.data.street}</p>

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import ContactEditor from "./ContactEditor/ContactEditor";
 import styles from "./Editor.module.css";
-import EducationEditor from "./EducationEditor/EducationEditor";
-import PersonalDataEditor from "./PersonalDataEditor/PersonalDataEditor";
-import SkillsEditor from "./SkillsEditor/SkillsEditor";
-import WorkEditor from "./WorkEditor/WorkEditor";
+import EditorContact from "./EditorContact/EditorContact";
+import EditorEducation from "./EditorEducation/EditorEducation";
+import EditorPersonal from "./EditorPersonal/EditorPersonal";
+import EditorSkills from "./EditorSkills/EditorSkills";
+import EditorWork from "./EditorWork/EditorWork";
 
 function Editor(props) {
   const [data, setData] = useState({});
@@ -47,11 +47,11 @@ function Editor(props) {
 
   return (
     <div className={styles["editor"]}>
-      <PersonalDataEditor onInputChange={handlePersonalData} />
-      <ContactEditor onInputChange={handleContactData} />
-      <WorkEditor onInputChange={handleWorkData} onDelete={handleDeleteWorkCard} />
-      <EducationEditor onInputChange={handleEducationData} onDelete={handleDeleteEducationCard} />
-      <SkillsEditor onInputChange={handleSkillsData} onDelete={handleDeleteSkillCard} />
+      <EditorPersonal onInputChange={handlePersonalData} />
+      <EditorContact onInputChange={handleContactData} />
+      <EditorWork onInputChange={handleWorkData} onDelete={handleDeleteWorkCard} />
+      <EditorEducation onInputChange={handleEducationData} onDelete={handleDeleteEducationCard} />
+      <EditorSkills onInputChange={handleSkillsData} onDelete={handleDeleteSkillCard} />
     </div>
   );
 }

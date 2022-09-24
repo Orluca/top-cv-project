@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import styles from "./PersonalDataEditor.module.css";
+import styles from "./EditorPersonal.module.css";
 import Subheader from "../../../General/Subheader/Subheader";
 import Input from "../../../General/Input/Input";
 import Textarea from "../../../General/Textarea/Textarea";
 import InputsContainer from "../../../General/InputsContainer/InputsContainer";
 
-function PersonalDataEditor(props) {
+function EditorPersonal(props) {
   const [personalData, setPersonalData] = useState({});
 
   function handleFirstName(val) {
@@ -41,4 +41,4 @@ function PersonalDataEditor(props) {
   );
 }
 
-export default PersonalDataEditor;
+export default EditorPersonal;

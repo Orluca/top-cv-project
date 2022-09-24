@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Input from "../../../General/Input/Input";
 import InputsContainer from "../../../General/InputsContainer/InputsContainer";
 import Subheader from "../../../General/Subheader/Subheader";
-import styles from "./ContactEditor.module.css";
+import styles from "./EditorContact.module.css";
 
-function ContactEditor(props) {
+function EditorContact(props) {
   const [contactData, setContactData] = useState({});
 
   function handlePhone(val) {
@@ -50,4 +50,4 @@ function ContactEditor(props) {
   );
 }
 
-export default ContactEditor;
+export default EditorContact;
