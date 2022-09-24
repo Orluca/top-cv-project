@@ -10,8 +10,8 @@ import PreviewerWork from "./PreviewerWork/PreviewerWork";
 function Previewer(props) {
   return (
     <div className={styles["previewer"]}>
-      <PreviewerHead data={props.data} />
-      <PreviewerAbout data={props.data} />
+      <PreviewerHead data={props.data.personal} />
+      <PreviewerAbout data={props.data.personal} />
       <PreviewerWork data={props.data.workExperience} />
       <PreviewerEducation data={props.data.education} />
       <PreviewerSkills data={props.data.skills} />

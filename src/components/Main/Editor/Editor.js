@@ -10,11 +10,11 @@ function Editor(props) {
   const [data, setData] = useState({});
 
   function handlePersonalData(val) {
-    setData((prev) => ({ ...prev, ...val }));
+    setData((prev) => ({ ...prev, personal: { ...val } }));
   }
 
   function handleContactData(val) {
-    setData((prev) => ({ ...prev, ...val }));
+    setData((prev) => ({ ...prev, contact: { ...val } }));
   }
 
   function handleWorkData(val) {
