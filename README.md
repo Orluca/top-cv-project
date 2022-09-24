@@ -1,4 +1,3 @@
-- nice animation for new card
 - responsiveness??
 - save data to local storage????
 - bg gradient?
