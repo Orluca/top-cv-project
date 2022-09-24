@@ -1,6 +1,7 @@
 .previewer {
   background-color: #fff;
-  width: 50%;
+  /* width: 50%; */
+  width: var(--page-width);
   padding: 1.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

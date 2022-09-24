@@ -1,3 +1,2 @@
 - responsiveness??
 - save data to local storage????
-- bg gradient?

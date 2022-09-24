@@ -1,6 +1,7 @@
 .editor {
   background-color: #fff;
-  width: 50%;
+  /* width: 50%; */
+  width: var(--page-width);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
