@@ -9,7 +9,7 @@ function PreviewerEducation(props) {
   return (
     <div className={styles["previewer-education"]}>
       <Subheader name="Education" />
-      {educationCards}
+      <ul>{educationCards}</ul>
     </div>
   );
 }
