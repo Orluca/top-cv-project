@@ -22,7 +22,7 @@ function SkillsCard(props) {
   return (
     <Card padding="small">
       <div className={styles["skill-input-wrapper"]}>
-        <input type="text" onChange={handleInput} className={styles["skill-input"]} />
+        <input type="text" onChange={handleInput} className={styles["skill-input"]} autoFocus />
         <DeleteButton onClick={handleDelete} />
       </div>
     </Card>

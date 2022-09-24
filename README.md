@@ -1,3 +1,2 @@
 - adding card should focus first input field
 - nice animation for new card
-- clean up css modules that are not needed

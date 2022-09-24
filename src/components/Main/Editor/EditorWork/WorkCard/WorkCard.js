@@ -41,7 +41,7 @@ function WorkCard(props) {
   return (
     <Card padding="big">
       <InputsContainer>
-        <Input name="Role" onInputChange={handleRole} type="text" color="white" />
+        <Input name="Role" onInputChange={handleRole} type="text" color="white" autoFocus="true" />
         <Input name="Company Name" onInputChange={handleCompany} type="text" color="white" />
         <InputTimespan name="Time Span" onStartChange={handleTimespanStart} onEndChange={handleTimespanEnd} />
         <Textarea name="Description" onInputChange={handleDescription} color="white" />
