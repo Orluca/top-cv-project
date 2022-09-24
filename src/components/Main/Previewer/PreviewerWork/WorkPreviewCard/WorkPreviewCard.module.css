@@ -1,0 +1,22 @@
+.work-preview-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-preview-card__timespan {
+  letter-spacing: -1px;
+}
+
+.work-preview-card__role {
+  color: var(--color-highlight);
+  font-size: 1.25rem;
+}
+
+.work-preview-card__company {
+  font-size: 0.9rem;
+}
+
+.work-preview-card__description {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
