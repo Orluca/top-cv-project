@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import styles from "./EditorWork.module.css";
 import Subheader from "../../../General/Subheader/Subheader";
 import WorkCard from "./WorkCard/WorkCard";
 import AddButton from "../../../General/AddButton/AddButton";

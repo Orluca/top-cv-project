@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Input from "../../../../General/Input/Input";
 import DeleteButton from "../../../../General/DeleteButton/DeleteButton";
 import InputTimespan from "../../../../General/InputTimespan/InputTimespan";
-import styles from "./EducationCard.module.css";
 import Card from "../../../../General/Card/Card";
 import InputsContainer from "../../../../General/InputsContainer/InputsContainer";
 

@@ -3,7 +3,6 @@ import Subheader from "../../../General/Subheader/Subheader";
 import EducationCard from "./EducationCard/EducationCard";
 import AddButton from "../../../General/AddButton/AddButton";
 import { v4 as uuidv4 } from "uuid";
-import styles from "./EditorEducation.module.css";
 import CardsContainer from "../../../General/CardsContainer/CardsContainer";
 
 function EditorEducation(props) {

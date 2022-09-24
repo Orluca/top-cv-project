@@ -4,7 +4,7 @@ import styles from "./Subheader.module.css";
 function Subheader(props) {
   return (
     <>
-      <h3>{props.name}</h3>
+      <h3 className={styles["subheader"]}>{props.name}</h3>
       <hr />
     </>
   );

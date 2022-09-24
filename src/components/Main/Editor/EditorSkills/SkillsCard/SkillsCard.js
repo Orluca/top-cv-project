@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Input from "../../../../General/Input/Input";
 import DeleteButton from "../../../../General/DeleteButton/DeleteButton";
 import styles from "./SkillsCard.module.css";
 import Card from "../../../../General/Card/Card";

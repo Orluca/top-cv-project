@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Input from "../../../../General/Input/Input";
 import Textarea from "../../../../General/Textarea/Textarea";
-import styles from "./WorkCard.module.css";
 import DeleteButton from "../../../../General/DeleteButton/DeleteButton";
 import InputTimespan from "../../../../General/InputTimespan/InputTimespan";
 import Card from "../../../../General/Card/Card";

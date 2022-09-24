@@ -3,7 +3,6 @@ import Subheader from "../../../General/Subheader/Subheader";
 import SkillsCard from "./SkillsCard/SkillsCard";
 import AddButton from "../../../General/AddButton/AddButton";
 import { v4 as uuidv4 } from "uuid";
-import styles from "./EditorSkills.module.css";
 import CardsContainer from "../../../General/CardsContainer/CardsContainer";
 
 function EditorSkills(props) {

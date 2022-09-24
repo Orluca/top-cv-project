@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Input from "../../../General/Input/Input";
 import InputsContainer from "../../../General/InputsContainer/InputsContainer";
 import Subheader from "../../../General/Subheader/Subheader";
-import styles from "./EditorContact.module.css";
 
 function EditorContact(props) {
   const [contactData, setContactData] = useState({});

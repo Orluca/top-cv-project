@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "./EditorPersonal.module.css";
 import Subheader from "../../../General/Subheader/Subheader";
 import Input from "../../../General/Input/Input";
 import Textarea from "../../../General/Textarea/Textarea";
